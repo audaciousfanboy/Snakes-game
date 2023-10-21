@@ -1,0 +1,118 @@
+body {
+  text-align: center;
+  background-color: rgba(158, 192, 145, 255);
+}
+
+.no-cursor {
+  caret-color: transparent;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.title-font {
+  font-family: "Press Start 2P", cursive;
+}
+.body-font {
+  font-family: "VT323", monospace;
+  font-size: 1.5rem;
+}
+
+.instruction-container {
+  position: relative;
+  height: 100%;
+}
+.instruction-alert {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 3rem;
+  animation: blink-animation 2s infinite;
+}
+.main-back-ground {
+  position: relative;
+  top: 0; /* Position at the top of the viewport */
+  left: 0; /* Position at the left of the viewport */
+  width: 100%; /* Take the full width of the viewport */
+  height: 100%;
+  background-color: rgba(158, 192, 145, 255);
+}
+
+/*Score Tracker*/
+.table-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Game Over CSS */
+.gameOver-Alert {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: rgba(158, 192, 145, 255);
+  z-index: 10;
+}
+
+.btn-design {
+  background-color: rgba(158, 192, 145, 255);
+  border-radius: 5px;
+}
+.btn-design:hover {
+  color: #fff;
+  background-color: rgb(76, 92, 68);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+/*High Score CSS*/
+.highScore-Alert {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 11;
+  background-color: rgba(158, 192, 145, 255);
+}
+
+.name-field {
+  border-radius: 5px;
+  border: 1px solid black;
+  text-align: center;
+  width: 300px;
+  background-color: rgba(158, 192, 145, 255);
+  color: black;
+}
+.name-field::placeholder {
+  color: black;
+  animation: blink-animation 2s infinite;
+}
+/* Score Board*/
+.score-board-table-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.table-header {
+  text-align: center;
+  width: 5rem;
+}
+
+/*Key Frames*/
+@keyframes blink-animation {
+  50% {
+    opacity: 0;
+  }
+}
